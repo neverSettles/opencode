@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@neversettles/opencode-streaming-bash",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that provides real-time streaming bash output",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "typecheck": "bun run tsc --noEmit",
+    "build": "bun run tsc"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "bash",
+    "streaming",
+    "terminal"
+  ],
+  "author": "Christopher Settles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neverSettles/opencode.git",
+    "directory": "packages/streaming-bash-plugin"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "workspace:*"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "catalog:",
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
+}
